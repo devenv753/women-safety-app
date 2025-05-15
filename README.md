@@ -1,69 +1,64 @@
-## Women Safety App
+# 🛡️ Women Safety Android App
 
-📊 Entity Relationship Diagram (ERD)
-The Women Safety App uses a relational database design to manage users, emergency actions, media, and location data efficiently. Below is an overview of the core entities and their relationships.
+A smart safety application designed for women, providing instant help in emergency situations through SOS alerts, live location sharing, and automated emergency contacts. Built using **Android Studio**, **Java**, and **Firebase**.
 
-🧱 Database Tables
-🔹 Users
-user_id (Primary Key)
+---
 
-name
+## 📌 Table of Contents
 
-phone_number
+- [Introduction](#introduction)
+- [Features](#features)
+- [Motivation](#motivation)
+- [Tech Stack](#tech-stack)
+- [Screenshots](#screenshots)
+- [ERD (Entity Relationship Diagram)](#erd-entity-relationship-diagram)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
 
-email
+---
 
-emergency_contact
+## 📝 Introduction
 
-🔹 SOS_Events
-sos_id (Primary Key)
+In today’s society, women face various safety challenges, especially when traveling alone at night. This app provides a precautionary tool for women to stay safe by sending alerts and sharing locations instantly.
 
-user_id (Foreign Key → Users)
+---
 
-timestamp
+## 🚀 Features
 
-battery_status
+- 📍 **Live Location Sharing**
+- 🔴 **SOS Emergency Button**
+- 📞 **Automatic Call to Emergency Contact**
+- 🎥 **Audio & Video Recording During SOS**
+- 🔋 **Send Last Location When Battery Is Low**
+- 🏥 **List of Nearby Police Stations, Hospitals & Shelters**
 
-location
+---
 
-🔹 Media_Files
-media_id (Primary Key)
+## 💡 Motivation
 
-sos_id (Foreign Key → SOS_Events)
+Safety is a basic right. In uncertain situations, fast and reliable communication can save lives. This app aims to minimize response time during emergencies and help women feel more secure.
 
-file_url
+---
 
-file_type (Audio/Video)
+## 🧰 Tech Stack
 
-recorded_time
+| Technology      | Usage                          |
+|-----------------|---------------------------------|
+| Android Studio  | App Development IDE             |
+| Java            | Core Language                   |
+| Firebase        | Authentication & Data Storage   |
+| Google Maps API | Location Services               |
 
-🔹 Location_History
-location_id (Primary Key)
+---
 
-user_id (Foreign Key → Users)
+## 🖼️ Screenshots
 
-latitude
+*(Add screenshots of the GUI here)*
 
-longitude
+---
 
-recorded_time
+## 📊 ERD (Entity Relationship Diagram)
 
-🔹 Emergency_Contacts
-contact_id (Primary Key)
+The database stores users, SOS events, locations, and media securely.
 
-user_id (Foreign Key → Users)
-
-name
-
-phone_number
-
-type (Police / Hospital / Safe Shelter / Other)
-
-🔗 Entity Relationships
-One User ➝ Many SOS_Events
-
-One SOS_Event ➝ Many Media_Files
-
-One User ➝ Many Location_History
-
-One User ➝ Many Emergency_Contacts
