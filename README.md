@@ -4,6 +4,10 @@
 
 A smart safety application designed for women, providing instant help in emergency situations through SOS alerts, live location sharing, and automated emergency contacts. Built using **Android Studio**, **Java**, and **Firebase**.
 
+---
+
+## 📌 E-R Diagram
+
 ![women_safety_erd](https://github.com/user-attachments/assets/2962e381-5c8b-4581-8dc5-19f05416c344)
 
 ---
