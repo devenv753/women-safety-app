@@ -1,8 +1,8 @@
 # 🛡️ Women Safety Android App
 
-![Women Safety Android App – Complete UI Design Overview](https://github.com/user-attachments/assets/e5f05a20-cf86-47aa-85f6-64dac7693043)
-
 A smart safety application designed for women, providing instant help in emergency situations through SOS alerts, live location sharing, and automated emergency contacts. Built using **Android Studio**, **Java**, and **Firebase**.
+
+![Women Safety Android App – Complete UI Design Overview](https://github.com/user-attachments/assets/e5f05a20-cf86-47aa-85f6-64dac7693043)
 
 ---
 
