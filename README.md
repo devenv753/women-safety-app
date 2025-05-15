@@ -52,13 +52,16 @@ Safety is a basic right. In uncertain situations, fast and reliable communicatio
 
 ---
 
-## 🖼️ Screenshots
 
-*(Add screenshots of the GUI here)*
+### 🔹 Tables Overview
+
+| Table              | Description                        |
+|--------------------|------------------------------------|
+| Users              | App users                          |
+| SOS_Events         | Triggered emergency events         |
+| Media_Files        | Audio/video evidence during SOS    |
+| Location_History   | GPS logs                           |
+| Emergency_Contacts | Saved emergency contact numbers    |
 
 ---
-
-## 📊 ERD (Entity Relationship Diagram)
-
-The database stores users, SOS events, locations, and media securely.
 
