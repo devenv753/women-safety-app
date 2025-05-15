@@ -6,12 +6,6 @@ A smart safety application designed for women, providing instant help in emergen
 
 ---
 
-## 📌 E-R Diagram
-
-![women_safety_erd](https://github.com/user-attachments/assets/2962e381-5c8b-4581-8dc5-19f05416c344)
-
----
-
 ## 📌 Table of Contents
 
 - [Introduction](#introduction)
@@ -73,3 +67,8 @@ Safety is a basic right. In uncertain situations, fast and reliable communicatio
 
 ---
 
+## 📌 E-R Diagram
+
+![women_safety_erd](https://github.com/user-attachments/assets/2962e381-5c8b-4581-8dc5-19f05416c344)
+
+---
