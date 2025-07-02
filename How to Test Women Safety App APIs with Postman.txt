@@ -1,0 +1,127 @@
+# How to Test Women Safety App APIs with Postman (Beginner Friendly)
+
+---
+
+## Step 1: Install Postman
+Download and install Postman from:  
+https://www.postman.com/downloads
+
+---
+
+## Step 2: Start Your Local Server
+Make sure your Apache and MySQL are running (e.g., via XAMPP),  
+and your PHP files are in:  
+`D:\SAYED HOSSAIN\PHP\htdocs\apps\women-safety-app`
+
+Access APIs at:  
+`http://localhost:8080/apps/women-safety-app/`
+
+---
+
+## Step 3: Common API Endpoints and Usage
+
+| Action                 | Method | URL                                              |
+|------------------------|--------|-------------------------------------------------|
+| Register User          | POST   | `/register_user.php`                             |
+| Add Emergency Contact  | POST   | `/add_emergency_contact.php`                     |
+| Log SOS Event          | POST   | `/add_sos_event.php`                             |
+| Add Media File         | POST   | `/add_media_file.php`                            |
+| Add Location History   | POST   | `/add_location.php`                              |
+| Get Emergency Contacts | GET    | `/get_emergency_contacts.php?user_id=USER_ID`  |
+| Get Location History   | GET    | `/get_location_history.php?user_id=USER_ID`    |
+
+---
+
+## Step 4: Example API Tests with Sample Data
+
+### 1) Register User  
+**POST** `http://localhost:8080/apps/women-safety-app/register_user.php`  
+Body (x-www-form-urlencoded):
+
+| Key       | Value           |
+|-----------|-----------------|
+| name      | Rima Akter      |
+| email     | rima@mail.com   |
+| phone     | 01712345678     |
+| password  | mypassword123   |
+
+---
+
+### 2) Add Emergency Contact  
+**POST** `http://localhost:8080/apps/women-safety-app/add_emergency_contact.php`  
+Body (x-www-form-urlencoded):
+
+| Key     | Value           |
+|---------|-----------------|
+| user_id | 1               |
+| name    | Ayesha Rahman   |
+| phone   | 01811112222     |
+
+---
+
+### 3) Log SOS Event  
+**POST** `http://localhost:8080/apps/women-safety-app/add_sos_event.php`  
+Body (x-www-form-urlencoded):
+
+| Key       | Value           |
+|-----------|-----------------|
+| user_id   | 1               |
+| location  | Mirpur, Dhaka   |
+| status    | Active          |
+
+---
+
+### 4) Add Media File  
+**POST** `http://localhost:8080/apps/women-safety-app/add_media_file.php`  
+Body (x-www-form-urlencoded):
+
+| Key        | Value                   |
+|------------|-------------------------|
+| event_id   | 1                       |
+| media_type | image                   |
+| file_path  | /media/sos1_photo.jpg   |
+
+---
+
+### 5) Add Location History  
+**POST** `http://localhost:8080/apps/women-safety-app/add_location.php`  
+Body (x-www-form-urlencoded):
+
+| Key       | Value    |
+|-----------|----------|
+| user_id   | 1        |
+| latitude  | 23.8103  |
+| longitude | 90.4125  |
+
+---
+
+### 6) Get Emergency Contacts  
+**GET** `http://localhost:8080/apps/women-safety-app/get_emergency_contacts.php?user_id=1`
+
+- No body needed.
+- Just send the GET request with `user_id` as query parameter.
+
+---
+
+### 7) Get Location History  
+**GET** `http://localhost:8080/apps/women-safety-app/get_location_history.php?user_id=1`
+
+- No body needed.
+- Just send the GET request with `user_id` as query parameter.
+
+---
+
+## Step 5: Tips for Beginners
+- Use **POST** method for all insert APIs and **GET** for fetch APIs.
+- Ensure the parameter **names** exactly match those in your API code.
+- Always fill in **all required fields**; missing fields cause errors.
+- Check the API **response JSON** for success or error messages.
+- Confirm data is inserted or fetched properly by checking your database or API response.
+
+---
+
+## Bonus: Want a Ready-to-Import Postman Collection?
+I can prepare a `.json` file with all these API requests  
+for quick import and testing in Postman. Just ask!
+
+---
